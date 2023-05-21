@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(white);
+    margin: 0;
+}
+
+body::before {
+        background: var(blue);
+    background-image: linear-gradient(115deg,rgba(101, 101, 151, 0.8), rgba(49, 49, 78, 0.7)),url('img/sm-home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+header{
+    list-style: 15px;
+}
+.container{
+    margin: 0 auto;
+    width: 50%;
+}
+#survey-form{
+    display: block;
+    background-color:rgba(27, 27, 50, 0.8);
+    padding: 25px 30px 25px 30px;
+    border-radius: 5px;
+    color: white;
+}
+#title, #description{
+    text-align: center;
+    color: aliceblue;
+}
+#title{
+    font-size: 28px;
+    
+}
+#description{
+    font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
+}
+label.form-input{
+    display: block;
+    margin-top: 20px;
+}
+label#dropdown-label{
+    display: block;
+    margin-top: 20px;
+}
+*:focus-visible {
+    border: 1px solid rgba(27, 27, 50, 0.8) !important;
+}
+input:not(.recomendar>input,.record>input),
+textarea,
+select{
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 0.5em;
+    color: gray;
+    padding: 10px 10px 10px 10px;
+    height: 97%;
+    font-size: 1rem;
+    border: 1px solid rgba(27, 27, 50, 0.8);
+}
+
+.recomendar,
+.record {
+    display: block;
+    margin: 0 10px 10px 0;
+}
+.recomendar>input,
+.record>input
+{   
+    vertical-align:sub;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0px 0;
+}
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    margin-bottom: 1.5em;
+    resize:none;
+}
+
+.btn-submit{
+   margin-top: 15px;
+   display: block;
+   margin: 0 auto 20px;
+   width: 100%;
+   padding: 1em;
+   background-color: green;
+   color: white;
+   font-size: 16px;
+   border-radius: 5px;
+   border: 0.5px solid green;
+}
+@media (max-width: 780px) {
+    .container {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
